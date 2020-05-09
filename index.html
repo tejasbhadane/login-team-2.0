@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Login and Registeration Form Design </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="login-page">
+<div class="form">
+	<form class="register-form">
+	<h1>REGISTERATION PAGE</h1>
+	<input type="text" name="fname" id="button"placeholder="Enter your First Name"><br>
+	<br>
+	<input type="text" name="fname" id="button"placeholder="Enter your Last Name"><br>
+	<br>
+	<input type="text" name="email" id="button"placeholder="Enter your e,mail-id"><br>
+	<br>
+	<input type="text" name="password" id="button"placeholder="Enter your password"><br>
+	<br>
+	<select><option>+91</></select>
+	<input type="number" name="num" placeholder="Enter your Mobile number" id="ph">
+	<input type="radio" name="gender" id="but"><span>Male</span> <input type="radio" name="gender"id="but"><span>Female</span>
+	
+	<button>Create</button>
+	<p class="message">Already Registered? <a href="#"> Login</a> </p>
+	</form>
+
+	<form class="login-form">
+	<input type="text" placeholder="user name"/>
+	<input type="text" placeholder="password"/>
+	<button>Login</button>
+	<p class="message">Not Registered? <a href="#">Register</a>
+	</p>
+	<p class="message"><a href="RESET.html">Reset Password</a></p>
+	</form>
+	</div>
+	</div>
+
+	<script src='https://code.jquery.com/jquery-3.5.0.min.js'>
+	</script>
+	
+	<script>
+	$('.message a').click(function(){
+	$('form').animate({height: "toggle",opacity: "toggle"}, "slow");
+	});
+	</script>
+
+	</body>
+</html>
